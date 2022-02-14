@@ -1,0 +1,39 @@
+.content {
+    display:flex;
+    padding: 25px;
+    margin: 200px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    align-items:  center;
+    background: rgba(0,0,0,0.75);
+    border-radius: 5%;
+}
+
+
+.content h1{
+    text-align: center;
+    margin: 15px;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+
+.about {
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2.5%;
+    color: #c7c7c7;
+    font-size: 23px;
+    text-align: justify;
+    line-height: 1.5;
+    column-gap: 5%;
+}
+
+.about p{
+    margin-top: 0em;
+    text-indent: 25px;
+    margin-bottom: 10px;
+}
+
+

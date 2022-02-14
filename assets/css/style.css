@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+	height: 100%;
+    font-family: 'Arial', sans-serif;
+	background-image: url(images/Фон_гл.png);
+	background-size: cover;
+	background-attachment: fixed;
+    background-position: 100% 100%;
+}
+
+.header{
+	margin: 0;
+    padding-top: 30px;
+	height: 150px;
+	background: relative; /*Для теста использовал*/
+	display: flex;
+    justify-content: space-around;
+    align-items:  center;
+	z-index: 100;
+}
+
+/*logo*/
+.logo{
+    align-items:  center;
+	margin: 0;
+}
+
+.logo:hover{
+	 opacity: 0.6;
+}
+
+
+/* menu*/
+.dws-menu *{
+	margin: 0;
+	padding: 0;
+}
+
+.dws-menu ul,
+.dws-menu ol{
+	list-style: none;
+}
+
+.dws-menu > ul{
+	display: flex;
+	justify-content: center;
+}
+
+.dws-menu > ul li a{
+	display: block;
+	background: black;
+	padding: 15px 30px 15px 40px;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+
+.dws-menu > ul li{
+	position: relative;
+	border-left: 2px solid #c7c7c7;
+}
+.dws-menu > ul li:first-child{
+	border-left: 2px solid #c7c7c7;
+}
+
+.dws-menu > ul li:last-child{
+	border-right: 2px solid #c7c7c7;
+}
+
+.dws-menu li a:hover{
+	background: #454547;
+	color: white;
+	transition: all 0.3s ease;
+}
+
+
+/*Sub menu*/
+
+.dws-menu  li ul{
+	position: absolute;
+	min-width: 300px;
+	display: none;
+}
+
+.dws-menu li > ul li{
+	border: 1px solid #c7c8ca;
+}
+
+.dws-menu li > ul li a{
+	padding: 10px;
+	text-transform: uppercase;
+	background:black;
+}	
+
+.dws-menu li:hover > ul{
+	display: block;
+}
+
+
+.main{
+  	display:flex;
+    justify-content: space-between;
+    padding: 100px;
+    align-items:  center;
+}
+/* description*/
+.Video{
+    align-items:  center;
+    display: block;
+    padding: 25px; 
+}
+
+.description {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    display: block;
+	background: rgba(0,0,0,0.75);
+    height: 400px;
+    width: 680px;
+	border-radius: 5%;
+}
+
+.description h1{
+    font-style: italic;
+    margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.description a{
+    color: #c7c7c7;
+    font-size: 20px;
+}
+.description a:hover{
+    opacity: 0.6;
+}
+.description p{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2.5%;
+    text-indent: 25px;
+    color: #c7c7c7;
+    font-size: 27px;
+}
+
+.footer {
+  	display:flex;
+    justify-content: flex-end;
+    padding-right: 48px;
+    background: transparent;
+    color: #c7c7c7;
+}
+
+#top{
+   position: fixed;
+   bottom: 64px;
+   right: 70px;
+   font-size: 64px;
+   z-index: 100;
+}
+
+.isShowBtn{
+    opacity: 1;
+    
+    &_hide{
+    opacity: 0;
+        
+    }
+}
+ 

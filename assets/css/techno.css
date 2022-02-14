@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+    height: 100vh;
+    background-image: url(images/Фон_гл.png);
+    background-blend-mode: multiply;
+    background-color: #7d868e;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+}
+
+/* navigation*/
+
+.navigation{
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.navigation a{
+    color: #fff;
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+}
+
+.nav li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 30px 0 0;
+    font-size: 20px;
+}
+
+li:hover{
+  opacity: 0.6;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'nasalization', sans-serif;
+}
+.logo:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+
+ .footer {
+    position: fixed;
+    text-align: end;
+    bottom: 0;
+    padding: 10px;
+    background: transparent;
+    color: #c7c7c7;
+    width: 98%;
+   }
