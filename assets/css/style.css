@@ -21,7 +21,9 @@ body{
 }
 
 /*logo*/
+
 .logo{
+    display: block;
     align-items:  center;
 	margin: 0;
 }
@@ -29,7 +31,10 @@ body{
 .logo:hover{
 	 opacity: 0.6;
 }
-
+.img_logo{
+    width: 200px;
+    padding: 30px;
+}
 
 /* menu*/
 .dws-menu *{
@@ -98,30 +103,118 @@ body{
 .dws-menu li:hover > ul{
 	display: block;
 }
+/* Бургер меню*/
+
+.burger-menu ul,
+.burger-menu ol{
+	list-style: none;
+}
+.burger-menu{
+    width: 300px;
+    background: black;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    transition: all 0.5s;
+    flex-direction: column;
+    display: none;
+}
+.burger-menu ul{
+    padding: 0;
+    margin: 0;
+}
+
+.burger-menu:hover{
+    left: 0;
+}
+
+.burger-menu > ul{
+	display: block;
+	justify-content: center;
+}
+
+.burger-menu > ul li a{
+	display: block;
+	background: black;
+	padding: 20px 30px 20px 30px;
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: all 0.3s ease;
+}
+.burger-menu > ul li{
+	position: relative;
+	border-bottom: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+}
+/*Sub бургер-menu*/
+
+.burger-menu  li ul{
+	position: absolute;
+    
+	min-width: 300px;
+	display: none;
+    z-index: 10;
+}
+
+.burger-menu li > ul li{
+	border: 1px solid #c7c8ca;
+}
+
+.burger-menu li > ul li a{
+	padding: 10px;
+	text-transform: uppercase;
+	background:black;
+}	
+
+.burger-menu li:hover > ul{
+	display: block;
+}
+
+.burger-menu:after{
+    content: "";
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(images/стрелка_меню.png);
+    z-index: 50;
+    position: absolute;
+    left: 310px;
+    top: 500px;
+}
 
 
+/*Контент*/
 .main{
   	display:flex;
     justify-content: space-between;
-    padding: 100px;
+    padding: 32px;
     align-items:  center;
 }
+
+
 /* description*/
 .Video{
     align-items:  center;
     display: block;
-    padding: 25px; 
+    margin: 100px;
+}
+
+.beginning{
+    display: block;
+    margin: 100px; 
 }
 
 .description {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 25px;
+    padding-top: 25px;
     display: block;
 	background: rgba(0,0,0,0.75);
-    height: 400px;
-    width: 680px;
-	border-radius: 5%;
+	border-radius: 64px;
 }
 
 .description h1{
@@ -152,25 +245,168 @@ body{
 .footer {
   	display:flex;
     justify-content: flex-end;
-    padding-right: 48px;
+    padding-top: 0px;
+    padding-right: 16px;
     background: transparent;
     color: #c7c7c7;
 }
 
-#top{
-   position: fixed;
-   bottom: 64px;
-   right: 70px;
-   font-size: 64px;
-   z-index: 100;
-}
-
-.isShowBtn{
-    opacity: 1;
+@media (max-width: 1720px){
+    .dws-menu{
+        padding: 15px;
+    } 
     
-    &_hide{
-    opacity: 0;
-        
+    .dws-menu > ul li a{
+        font-size: 18px;
+        padding: 10px 25px 10px 35px;
+    }
+    .img_logo{
+        width: 200px;
+        padding: 30px;
     }
 }
- 
+
+@media (max-width: 1620px){
+    .dws-menu{
+        padding: 20px;
+    }
+    .img_logo{
+        width: 164px;
+        padding: 30px;
+    }
+    .dws-menu > ul li a{
+        font-size: 16px;
+        padding: 10px 25px 10px 35px;
+    }
+}
+
+@media (max-width: 1500px){
+    .dws-menu{
+        padding: 20px;
+    }
+    .img_logo{
+        width: 164px;
+        padding: 30px;
+    }
+    .dws-menu > ul li a{
+        font-size: 16px;
+        padding: 10px 25px 10px 35px;
+    }
+}
+
+
+@media (max-width: 1440px){
+    .dws-menu{
+        padding: 20px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .img_logo{
+        width: 164px;
+        padding: 15px;
+    }
+    .dws-menu > ul li a{
+        font-size: 16px;
+        padding: 10px 25px 10px 35px;
+    }
+
+}
+@media (max-width: 1400px){
+    .dws-menu{
+        padding: 20px;
+    }
+
+    .img_logo{
+        width: 132px;
+        padding: 15px;
+    }
+    .dws-menu > ul li a{
+        font-size: 14px;
+        padding: 10px 25px 10px 35px;
+    }
+}
+
+@media (max-width: 1300px){
+    .dws-menu{
+        padding: 20px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .img_logo{
+        width: 132px;
+        padding: 15px;
+    }
+    .dws-menu > ul li a{
+        font-size: 14px;
+        padding: 10px 25px 10px 35px;
+    }    
+    
+}
+
+@media (max-width: 1260px){
+    .dws-menu{
+        padding: 20px;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .img_logo{
+        width: 132px;
+        padding: 15px;
+    }
+    .dws-menu > ul li a{
+        font-size: 12px;
+        padding: 10px 25px 10px 35px;
+    } 
+}
+
+@media (max-width: 1200px){
+    .img_logo{
+        width: 200px;
+        padding: 15px;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .dws-menu{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    .burger-menu{
+        display: block;
+    }
+    .dws-menu{
+        display: none;
+    }
+    .description h1{
+        font-size: 30px;
+    }
+    .description p{
+        font-size: 17px;
+    }
+    .description a{
+        font-size: 17px;
+    }
+    .Video{
+        display: none;
+    } 
+}
+
+@media (max-width: 375px){
+    .description h1{
+        font-size: 26px;
+    }
+    .description p{
+        font-size: 16px;
+    }
+    .description a{
+        font-size: 16px;
+    }
+    .footer{
+        padding-left: 10px; 
+}
+}
