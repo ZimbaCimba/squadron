@@ -394,6 +394,8 @@ body{
     .Video{
         display: none;
     } 
+    .footer{
+        padding-left: 10px; 
 }
 
 @media (max-width: 375px){
