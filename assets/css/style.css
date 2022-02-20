@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -13,7 +16,7 @@ body{
 	margin: 0;
     padding-top: 30px;
 	height: 150px;
-	background: relative; /*Для теста использовал*/
+	background: relative;
 	display: flex;
     justify-content: space-around;
     align-items:  center;
@@ -397,7 +400,7 @@ body{
     .footer{
         padding-left: 10px; 
 }
-
+}
 @media (max-width: 375px){
     .description h1{
         font-size: 26px;

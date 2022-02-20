@@ -95,6 +95,38 @@
     font-size: 20px;
 }
 
+details{
+   font-size: 23px;
+    padding: 10px;
+    
+}
+.eng_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid white;
+}
+
+.ph_eng{
+    display: block;
+    padding: 50px;
+    
+}
+.about_eng{
+    display: block;
+
+}
+.about_eng p{
+    text-indent: 25px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+.about_eng ul {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+
 
 
 @media (max-width: 1720px){
@@ -246,6 +278,11 @@
 }
 
 @media (max-width: 375px){
-
+    .content__text{
+        margin-left: 50px;
+    }
+    .content__list{
+        margin-left: 50px; 
+    }
 }
 
